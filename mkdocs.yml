@@ -1,0 +1,12 @@
+site_name: Laulom Anthony
+theme:
+  name: material
+extra_css:
+  - assets/custom.css
+nav:
+  - Home: index.md
+  - About: about.md
+  - Skills: skills.md
+  - Experience: experience.md
+repo_url: https://github.com/laulom/laulom.github.io
+repo_name: laulom.github.io
