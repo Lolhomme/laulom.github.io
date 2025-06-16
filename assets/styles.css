@@ -3,7 +3,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background: #fff;
+    color: #222;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background: #181818;
+    color: #eee;
 }
 
 h1, h2, h3 {
@@ -56,4 +63,22 @@ a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5em 1em;
+    border: none;
+    background: #eee;
+    color: #222;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+body.dark-mode #theme-toggle {
+    background: #222;
+    color: #eee;
 }

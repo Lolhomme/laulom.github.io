@@ -1,5 +1,8 @@
 # Markdown CV
 
+<!-- Dark/Light mode switch -->
+<button id="theme-toggle">🌙 Switch Theme</button>
+
 ## Contact Information
 - **Name:** Your Name
 - **Email:** your.email@example.com
