@@ -1,8 +1,10 @@
 body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 20px;
     background: #fff;
     color: #222;
     transition: background 0.3s, color 0.3s;
@@ -81,4 +83,66 @@ a:hover {
 body.dark-mode #theme-toggle {
     background: #222;
     color: #eee;
+}
+
+.sidebar {
+    width: 220px;
+    background: #f5f5f5;
+    padding: 2rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-right: 1px solid #ddd;
+    z-index: 999;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 1.2em 0;
+}
+
+.sidebar a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 2rem 2rem 2rem 2rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+body.dark-mode .sidebar {
+    background: #222;
+    border-right: 1px solid #444;
+}
+
+body.dark-mode .sidebar a {
+    color: #66aaff;
+}
+
+@media (max-width: 700px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding: 1rem 0.5rem;
+    }
+    .main-content {
+        margin-left: 0;
+        padding: 1rem;
+    }
 }
