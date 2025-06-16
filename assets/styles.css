@@ -167,3 +167,7 @@ body.dark-mode .sidebar a {
         margin-top: 0;
     }
 }
+
+:target {
+  scroll-margin-top: 70px; /* Adjust 70px to match your .headerbar height */
+}
