@@ -2,6 +2,11 @@
 
 <link rel="stylesheet" href="assets/styles.css">
 
+<div class="headerbar">
+  <span class="site-title">Laulom Anthony</span>
+  <button id="theme-toggle" aria-label="Switch Theme">🌙 Switch Theme</button>
+</div>
+
 <div class="sidebar">
   <nav>
     <ul>
@@ -16,8 +21,6 @@
 </div>
 
 <div class="main-content">
-  <!-- Dark/Light mode switch -->
-  <button id="theme-toggle">🌙 Switch Theme</button>
 
   ## <span id="contact-information"></span>Contact Information
   - **Name:** Your Name
@@ -70,13 +73,24 @@
 const toggle = document.getElementById('theme-toggle');
 const body = document.body;
 
+// Set initial icon based on saved theme
+function setThemeIcon() {
+  if (body.classList.contains('dark-mode')) {
+    toggle.textContent = '🌞 Switch Theme';
+  } else {
+    toggle.textContent = '🌙 Switch Theme';
+  }
+}
+
 // Load saved theme
 if (localStorage.getItem('theme') === 'dark') {
   body.classList.add('dark-mode');
 }
+setThemeIcon();
 
 toggle.onclick = () => {
   body.classList.toggle('dark-mode');
   localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+  setThemeIcon();
 };
 </script>
