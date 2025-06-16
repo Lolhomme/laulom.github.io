@@ -138,8 +138,8 @@ body.dark-mode .site-title {
     margin-left: 240px;
     padding: 2rem 2rem 2rem 2rem;
     width: 100%;
-    max-width: 900px;
     margin-top: 60px;
+    box-sizing: border-box;
 }
 
 body.dark-mode .sidebar {
@@ -149,6 +149,26 @@ body.dark-mode .sidebar {
 
 body.dark-mode .sidebar a {
     color: #66aaff;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Creates 4 equal columns */
+  gap: 20px; /* Adjust gap as needed */
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.info-col {
+  min-width: 0; /* Prevents overflow */
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  box-sizing: border-box;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
 }
 
 /* Responsive adjustments */
@@ -166,6 +186,15 @@ body.dark-mode .sidebar a {
     .main-content {
         margin-top: 0;
     }
+}
+
+@media (max-width: 900px) {
+  .info-row {
+    grid-template-columns: 1fr; /* Stack vertically on smaller screens */
+  }
+  .info-col {
+    min-width: 0;
+  }
 }
 
 :target {
