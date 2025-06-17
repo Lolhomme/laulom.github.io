@@ -1,15 +1,31 @@
 site_name: Laulom Anthony
 theme:
+  features:
+    - toc.integrate
+    - navigation.top
   name: material
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+plugins: []
 extra_css:
   - assets/custom.css
-features:
-    - navigation.tabs
-    - navigation.sections
-    - content.code.annotate
 nav:
-  - Home: index.md
-  - Tech Skills & Tools I've worked with: skills.md
-  - Experience: experience.md
+  - Mes outils et compétences: skills.md
+  - Expériences: experience.md
 repo_url: https://github.com/Lolhomme/CV-markdown
 repo_name: CV-markdown
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition

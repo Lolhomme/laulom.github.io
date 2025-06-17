@@ -1,54 +1,36 @@
 # Laulom Anthony
 
-## 📞 Contact Me
-
-- **Email**: [philibert.ollier@gmail.com](mailto:philibert.ollier@gmail.com)  
-- **Phone**: [+33 6 51 82 05 61](tel:+33651820561)  
-  - [WhatsApp](https://wa.me/33651820561)  
-  - [SMS](sms:+33651820561)  
-  - [Call](tel:+33651820561)  
-- **Website**: [https://philibert.io](https://philibert.io)  
-- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com)
+!!! quote ""
+    Web développeur, curieux et attentif
 
 ---
+<div class="grid cards" markdown>
+!!! abstract "Mes contacts"
 
-## 🎓 Education
+    - **Email**: [anthonylaulom@gmail.com](mailto:anthonylaulom@gmail.com)  
+    - **Phone**: [+33 6 71 25 67 40](tel:+33671256740)  
+    - **Website**: [laulom.io](https://laulom.io)  
+    - **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/anthony-laulom-574947a7/)
 
-### École 42 (2014–2016)
-- Software Engineering  
-- Cloud Infrastructures  
-- Security & Ethical Hacking  
+!!! example "Éducation"
 
-### High School Diploma (2012)
-- Embedded Electronic Systems  
-- Telecommunications and Networks  
+    **École 42** (2014–2017)  
+    - Développeur 
 
----
+    **Université Victor Segalen** (2005-2008)
+    - Licence de Sociologie
 
-## 🌐 Languages
+    **High School Diploma** (2005)  
+    - Bac Littéraire
 
-- **French**: Native  
-- **English**: Professional  
+!!! note "Langues"
 
----
+    - **Français**: Langue maternelle
+    - **Anglais**: Professionnel
 
-## 🏢 Workplaces
+!!! tip "Loisirs"
 
-- Remote  
-- France  
-- Spain  
-- Poland  
-- Morocco  
-
----
-
-## 🧪 Hobby
-
-- Kite Surf  
-- Sailing  
-- DIY Home Automation  
-- Video Games  
-- HomeLab Servers  
-- Scuba Diving  
-
----
+    - Jeux Vidéos
+    - Cinéma
+    - Musiques de jeux et de films
+</div>

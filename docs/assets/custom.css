@@ -1,202 +1,214 @@
-body {
-    display: flex;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #fff;
-    color: #222;
-    transition: background 0.3s, color 0.3s;
-}
-
-body.dark-mode {
-    background: #181818;
-    color: #eee;
-}
-
-h1, h2, h3 {
-    color: #333;
-}
-
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-}
-
-h2 {
-    font-size: 2em;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-}
-
-h3 {
-    font-size: 1.5em;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-}
-
-p {
-    margin: 0.5em 0;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin: 0.5em 0;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.headerbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background: #f5f5f5;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-    z-index: 1001;
-}
-
-.site-title {
-    font-size: 1.7em;
-    font-weight: bold;
-    color: #222;
-}
-
-#theme-toggle {
-    position: static;
-    margin-left: 1rem;
-}
-
-body.dark-mode .headerbar {
-    background: #222;
-    border-bottom: 1px solid #444;
-}
-
-body.dark-mode .site-title {
-    color: #eee;
-}
-
-.sidebar {
-    width: 220px;
-    background: #f5f5f5;
-    padding: 2rem 1rem;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    bottom: 0;
-    border-right: 1px solid #ddd;
-    z-index: 999;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar li {
-    margin: 1.2em 0;
-}
-
-.sidebar a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-.sidebar a:hover {
-    text-decoration: underline;
-}
-
-.main-content {
-    margin-left: 240px;
-    padding: 2rem 2rem 2rem 2rem;
-    width: 100%;
-    margin-top: 60px;
-    box-sizing: border-box;
-}
-
-body.dark-mode .sidebar {
-    background: #222;
-    border-right: 1px solid #444;
-}
-
-body.dark-mode .sidebar a {
-    color: #66aaff;
-}
-
-.info-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* Creates 4 equal columns */
-  gap: 20px; /* Adjust gap as needed */
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  width: 100%;
-}
-
-.info-col {
-  min-width: 0; /* Prevents overflow */
-  background: #f9f9f9;
-  border-radius: 8px;
-  padding: 1rem;
-  box-sizing: border-box;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+.card-row {
   display: flex;
-  flex-direction: column;
+  gap: 0.5em; /* Small gap between cards */
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap; /* Allow wrapping when needed */
+  margin-bottom: 2em;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 0;
+  padding-right: 1.5em; /* Increased right padding */
+  margin-top: 0;
+  padding-top: 0;
 }
 
-/* Responsive adjustments */
-@media (max-width: 700px) {
-    .headerbar {
-        flex-direction: column;
-        height: auto;
-        padding: 1rem;
-        align-items: flex-start;
-    }
-    .sidebar {
-        top: auto;
-        height: auto;
-    }
-    .main-content {
-        margin-top: 0;
-    }
+.card {
+  border: 2.5px solid #333;
+  border-radius: 12px;
+  padding: 1.5em;
+  margin: 0;
+  background: #1a1a1a;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  min-width: 0;
+  flex: 1 1 18%; /* Reduced from 20% to 18% */
+  max-width: 24%; /* Add explicit max-width */
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent content overflow */
 }
 
+.card-contact {
+  border-color: #8BC34A;
+}
+.card-education {
+  border-color: #3f51b5;
+}
+.card-languages {
+  border-color: #ff9800;
+}
+.card-hobby {
+  border-color: #e91e63;
+}
+
+.card h3, .card h4 {
+  color: #8BC34A;
+  margin-top: 0;
+}
+
+.card ul, .card p {
+  color: #ddd;
+}
+
+.md-typeset a {
+  color: #82b1ff;
+}
+
+blockquote {
+  border-left: 4px solid #3f51b5;
+  padding-left: 1em;
+  color: #ccc;
+  margin: 0.5em 0;
+}
+
+/* Make main content area full width */
+.md-content, .md-main__inner, .md-content__inner {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Remove left padding from main content area */
+.md-content__inner {
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+
+/* Hide sidebar and headerbar if desired */
+@media (min-width: 900px) {
+  /* Remove or comment out these lines to restore header and sidebar */
+  /* 
+  .md-sidebar--primary,
+  .md-sidebar--secondary,
+  .md-header {
+    display: none !important;
+  }
+  .md-main {
+    margin-left: 0 !important;
+  }
+  */
+}
+
+/* Responsive: stack cards vertically on small screens */
 @media (max-width: 900px) {
-  .info-row {
-    grid-template-columns: 1fr; /* Stack vertically on smaller screens */
+  .card-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1em;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
-  .info-col {
-    min-width: 0;
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 
-:target {
-  scroll-margin-top: 70px; /* Adjust 70px to match your .headerbar height */
+/* Add styling for description */
+.description {
+  /* padding: 1em 0; */
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-left: 0;
+  padding-right: 1.5em;
+}
+
+.description blockquote {
+  margin-left: 0;
+  padding-left: 1em;
+  border-left: 4px solid #3f51b5;
+  color: #ccc;
+}
+
+/* Add horizontal separator styling */
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  margin: 1.5em 0;
+}
+
+/* Remove almost all space between title and description */
+h1 {
+  margin-bottom: 0; /* Remove bottom margin completely */
+}
+
+/* Pull description much closer to title */
+.description {
+  margin-top: -0.5em; /* More aggressive negative margin */
+  padding-top: 0;
+}
+
+/* Ensure blockquote aligns properly */
+.description blockquote {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Additional selector to override any theme defaults */
+.md-typeset h1 + .description {
+  margin-top: -0.6em;
+}
+
+/* Make headerbar content full width */
+.md-header__inner,
+.md-header-nav__inner {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box;
+}
+
+/* Horizontal layout for admonitions */
+.md-typeset .admonition {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0.5%;
+  box-sizing: border-box;
+}
+
+/* Responsive behavior */
+@media (max-width: 1200px) {
+  .md-typeset .admonition {
+    width: 48%;
+    margin: 0.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .md-typeset .admonition {
+    width: 100%;
+    margin: 0.5em 0;
+  }
+}
+
+/* Remove excessive padding */
+.md-typeset .admonition-title {
+  padding-left: 1em;
+  margin-top: 0;
+}
+
+.md-typeset .admonition-title::before {
+  left: 0.2em;
+}
+
+/* Custom colors for each admonition type */
+.md-typeset .admonition.abstract {
+  border-color: #8BC34A;
+}
+.md-typeset .admonition.example {
+  border-color: #3f51b5;
+}
+.md-typeset .admonition.note {
+  border-color: #ff9800;
+}
+.md-typeset .admonition.tip {
+  border-color: #e91e63;
 }
