@@ -3,10 +3,13 @@ theme:
   name: material
 extra_css:
   - assets/custom.css
+features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.annotate
 nav:
   - Home: index.md
-  - About: about.md
-  - Skills: skills.md
+  - Tech Skills & Tools I've worked with: skills.md
   - Experience: experience.md
 repo_url: https://github.com/Lolhomme/CV-markdown
 repo_name: CV-markdown
