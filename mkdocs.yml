@@ -20,8 +20,6 @@ theme:
 plugins: []
 extra_css:
   - assets/custom.css
-repo_url: https://github.com/Lolhomme/CV-markdown
-repo_name: CV-markdown
 markdown_extensions:
   - attr_list
   - md_in_html
