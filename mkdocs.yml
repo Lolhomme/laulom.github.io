@@ -1,4 +1,5 @@
 site_name: Laulom Anthony
+site_url: https://laulom.io
 theme:
   features:
     - toc.integrate
