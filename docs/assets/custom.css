@@ -1,0 +1,34 @@
+/* Make main content area full width */
+.md-content, .md-main__inner, .md-content__inner {
+  max-width: 100% !important;
+}
+
+/* Custom colors for each admonition type */
+.md-typeset .admonition.abstract {
+  border-color: #8BC34A;
+}
+.md-typeset .admonition.example {
+  border-color: #3f51b5;
+}
+.md-typeset .admonition.note {
+  border-color: #ff9800;
+}
+.md-typeset .admonition.tip {
+  border-color: #e91e63;
+}
+
+/* Add the following CSS rules to ensure the header takes full width */
+.md-header {
+    position: relative;
+    z-index: 10;
+    width: 100%; /* Ensure full width */
+}
+
+.md-header__inner {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+    max-width: 100%; /* Ensure full width */
+    padding: 0.5rem 0;
+    margin: 0 auto;
+}
