@@ -1,202 +1,6 @@
-.card-row {
-  display: flex;
-  gap: 0.5em; /* Small gap between cards */
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-wrap: wrap; /* Allow wrapping when needed */
-  margin-bottom: 2em;
-  width: 100%;
-  box-sizing: border-box;
-  padding-left: 0;
-  padding-right: 1.5em; /* Increased right padding */
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.card {
-  border: 2.5px solid #333;
-  border-radius: 12px;
-  padding: 1.5em;
-  margin: 0;
-  background: #1a1a1a;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  min-width: 0;
-  flex: 1 1 18%; /* Reduced from 20% to 18% */
-  max-width: 24%; /* Add explicit max-width */
-  box-sizing: border-box;
-  overflow: hidden; /* Prevent content overflow */
-}
-
-.card-contact {
-  border-color: #8BC34A;
-}
-.card-education {
-  border-color: #3f51b5;
-}
-.card-languages {
-  border-color: #ff9800;
-}
-.card-hobby {
-  border-color: #e91e63;
-}
-
-.card h3, .card h4 {
-  color: #8BC34A;
-  margin-top: 0;
-}
-
-.card ul, .card p {
-  color: #ddd;
-}
-
-.md-typeset a {
-  color: #82b1ff;
-}
-
-blockquote {
-  border-left: 4px solid #3f51b5;
-  padding-left: 1em;
-  color: #ccc;
-  margin: 0.5em 0;
-}
-
 /* Make main content area full width */
 .md-content, .md-main__inner, .md-content__inner {
   max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-/* Remove left padding from main content area */
-.md-content__inner {
-  padding-left: 0 !important;
-  margin: 0 !important;
-}
-
-/* Hide sidebar and headerbar if desired */
-@media (min-width: 900px) {
-  /* Remove or comment out these lines to restore header and sidebar */
-  /* 
-  .md-sidebar--primary,
-  .md-sidebar--secondary,
-  .md-header {
-    display: none !important;
-  }
-  .md-main {
-    margin-left: 0 !important;
-  }
-  */
-}
-
-/* Responsive: stack cards vertically on small screens */
-@media (max-width: 900px) {
-  .card-row {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1em;
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-  }
-  .card {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
-
-/* Add styling for description */
-.description {
-  /* padding: 1em 0; */
-  margin-bottom: 1.5em;
-  max-width: 100%;
-  box-sizing: border-box;
-  padding-left: 0;
-  padding-right: 1.5em;
-}
-
-.description blockquote {
-  margin-left: 0;
-  padding-left: 1em;
-  border-left: 4px solid #3f51b5;
-  color: #ccc;
-}
-
-/* Add horizontal separator styling */
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
-  margin: 1.5em 0;
-}
-
-/* Remove almost all space between title and description */
-h1 {
-  margin-bottom: 0; /* Remove bottom margin completely */
-}
-
-/* Pull description much closer to title */
-.description {
-  margin-top: -0.5em; /* More aggressive negative margin */
-  padding-top: 0;
-}
-
-/* Ensure blockquote aligns properly */
-.description blockquote {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-/* Additional selector to override any theme defaults */
-.md-typeset h1 + .description {
-  margin-top: -0.6em;
-}
-
-/* Make headerbar content full width */
-.md-header__inner,
-.md-header-nav__inner {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  box-sizing: border-box;
-}
-
-/* Horizontal layout for admonitions */
-.md-typeset .admonition {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0.5%;
-  box-sizing: border-box;
-}
-
-/* Responsive behavior */
-@media (max-width: 1200px) {
-  .md-typeset .admonition {
-    width: 48%;
-    margin: 0.5%;
-  }
-}
-
-@media (max-width: 768px) {
-  .md-typeset .admonition {
-    width: 100%;
-    margin: 0.5em 0;
-  }
-}
-
-/* Remove excessive padding */
-.md-typeset .admonition-title {
-  padding-left: 1em;
-  margin-top: 0;
-}
-
-.md-typeset .admonition-title::before {
-  left: 0.2em;
 }
 
 /* Custom colors for each admonition type */
@@ -211,4 +15,20 @@ h1 {
 }
 .md-typeset .admonition.tip {
   border-color: #e91e63;
+}
+
+/* Add the following CSS rules to ensure the header takes full width */
+.md-header {
+    position: relative;
+    z-index: 10;
+    width: 100%; /* Ensure full width */
+}
+
+.md-header__inner {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+    max-width: 100%; /* Ensure full width */
+    padding: 0.5rem 0;
+    margin: 0 auto;
 }
