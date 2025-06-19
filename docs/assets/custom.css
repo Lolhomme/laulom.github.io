@@ -56,8 +56,65 @@
     page-break-inside: avoid !important;
   }
 
+  /* Prevent page breaks inside cards and grid items */
+  .grid.cards,
+  .grid.cards > *,
+  .admonition,
+  .md-typeset .admonition {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Remove extra margin/padding that can cause blank pages */
+  .grid.cards,
+  .grid.cards > * {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Remove min-height that can cause empty space */
+  .grid.cards > * {
+    min-height: 0 !important;
+  }
+
   /* Remove extra top margin on first page */
   @page:first {
     margin-top: 0;
+  }
+
+  /* Ensure admonitions and cards have visible borders/backgrounds in print */
+  .md-typeset .admonition,
+  .md-typeset details,
+  .md-typeset .admonition-title {
+    background: #fff !important;
+    color: #222 !important;
+    border: 1px solid #bbb !important;
+    box-shadow: none !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Remove box-shadow and border-radius for a cleaner print look */
+  .md-typeset .admonition,
+  .md-typeset details {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  /* Fix spacing inside cards */
+  .grid.cards > * {
+    margin-bottom: 12pt !important;
+    padding: 8pt !important;
+    background: #fff !important;
+    border: 1px solid #bbb !important;
+  }
+
+  h2 {
+    page-break-before: auto !important;
+    break-before: auto !important;
+  }
+  h2:not(:first-of-type):not(:nth-of-type(2)) {
+    page-break-before: always !important;
+    break-before: always !important;
   }
 }
