@@ -32,3 +32,32 @@
     padding: 0.5rem 0;
     margin: 0 auto;
 }
+
+@media print {
+  .md-header, .md-sidebar, .md-footer, nav, .md-nav, .md-tabs {
+    display: none !important;
+  }
+  .md-content, .md-main__inner, .md-content__inner {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Fix grid and card layouts for print */
+  .grid.cards {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Remove page breaks that cause blank pages */
+  * {
+    page-break-before: auto !important;
+    page-break-after: auto !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Remove extra top margin on first page */
+  @page:first {
+    margin-top: 0;
+  }
+}
