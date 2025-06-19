@@ -9,7 +9,7 @@
 
     - :material-gmail: **Email**: [anthonylaulom@gmail.com](mailto:anthonylaulom@gmail.com)  
     - :material-phone: **Phone**: [+33 6 71 25 67 40](tel:+33671256740)  
-    - :material-web: **Website**: [laulom.io](www.laulom.io)  
+    - :material-web: **Website**: [laulom.io](https://www.laulom.io)  
     - :material-linkedin: **LinkedIn**: [LinkedIn](https://www.linkedin.com/in/anthony-laulom-574947a7/)
 
 !!! example "Éducation"
