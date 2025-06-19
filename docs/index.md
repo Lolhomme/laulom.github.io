@@ -86,8 +86,6 @@
 
 ## Experiences professionnelles
 
-<div class="experience-card" markdown>
-
 !!! info experience-card "Février 2024 - Juin 2024"
     ### Dougs
 
@@ -112,7 +110,6 @@
         - Pair programming
         - Différentes réunions quotidiennes et hebdomadaires
     </div>
-</div>
 
 !!! info experience-card "Avril 2023 - Janvier 2024"
     ### Kili Technology
