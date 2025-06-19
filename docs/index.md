@@ -86,7 +86,7 @@
 
 ## Experiences professionnelles
 
-!!! info experience-card "Février 2024 - Juin 2024"
+!!! info "Février 2024 - Juin 2024"
     ### Dougs
 
     **Projet:** Contribution à l’application de Dougs: des experts comptables en ligne.
@@ -111,7 +111,7 @@
         - Différentes réunions quotidiennes et hebdomadaires
     </div>
 
-!!! info experience-card "Avril 2023 - Janvier 2024"
+!!! info "Avril 2023 - Janvier 2024"
     ### Kili Technology
 
     **Projet:** Contribution à la plateforme de labellisation de Kili.
@@ -136,7 +136,7 @@
         - Différentes réunions quotidiennes et hebdomadaires
     </div>
 
-!!! info experience-card "Août 2022 - Mars 2023"
+!!! info "Août 2022 - Mars 2023"
     ### BCM Energy / Elmy
 
     **Projet:** Développement d’applications pour un producteur, trader et fournisseur d’énergie.
@@ -161,7 +161,7 @@
         - Différentes réunions quotidiennes et hebdomadaires
     </div>
 
-!!! info experience-card "Avril 2021 - Juillet 2022"
+!!! info "Avril 2021 - Juillet 2022"
     ### Dougs
 
     **Projet:** Contribution à l’app Dougs et ses microservices.
@@ -183,7 +183,7 @@
         - Réunions quotidiennes et hebdomadaires
     </div>
 
-!!! info experience-card "Janvier 2018 - Avril 2021"
+!!! info "Janvier 2018 - Avril 2021"
     ### Lylo Media Group
 
     **Projet:** Développement de la plateforme Youdub de gestion de la localisation audiovisuelle.
