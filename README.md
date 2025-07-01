@@ -13,7 +13,7 @@ This project is a simple Markdown-based CV that can be hosted on GitHub Pages. I
 
 ## Deploying to GitHub Pages
 
-Once changes are pushed to the main branch, the GitHub Actions workflow will automatically deploy the CV to GitHub Pages. The CV is accessible at `https://<your-username>.github.io/<repository-name>/`.
+Once changes are pushed to the main branch, the GitHub Actions workflow will automatically deploy the CV to GitHub Pages. The CV is accessible at `https://laulom.io`.
 
 ## License
 
