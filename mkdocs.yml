@@ -19,6 +19,8 @@ theme:
         icon: material/brightness-7
         name: Switch to dark mode
 plugins: []
+extra:
+  generator: false
 extra_css:
   - assets/custom.css
 extra_javascript:
