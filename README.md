@@ -4,7 +4,8 @@ This project is a simple Markdown-based CV that can be hosted on GitHub Pages. I
 
 ## Project Structure
 
-- **index.md**: The main content of the CV written in Markdown format.
+- **index.fr.md**: Main CV content in French.
+- **index.en.md**: Main CV content in English.
 - **assets/styles.css**: CSS styles for the CV, defining its visual appearance when rendered.
 - **.github/workflows/github-pages.yml**: GitHub Actions workflow for automating deployment to GitHub Pages.
 - **README.md**: Documentation for the project.
