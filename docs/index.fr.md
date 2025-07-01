@@ -91,6 +91,8 @@
 
     **Projet:** Contribution à l’application de Dougs: des experts comptables en ligne.
 
+    **Stack:** Node.js - Typescript - Angular- postgreSQL - Jest - NestJS
+
     <div class="grid cards" markdown>
     !!! quote "Équipe"
         - Aider à la création d’une nouvelle équipe.
@@ -115,6 +117,8 @@
     ### Kili Technology
 
     **Projet:** Contribution à la plateforme de labellisation de Kili.
+
+    **Stack:** Node.js - Typescript - React - postgreSQL - Jest - Mocha - GraphQL
 
     <div class="grid cards" markdown>
     !!! quote "Équipe"
@@ -141,6 +145,8 @@
 
     **Projet:** Développement d’applications pour un producteur, trader et fournisseur d’énergie.
 
+    **Stack:** Node.js - Typescript - React - postgreSQL - Jest - Mocha - Pubsub
+
     <div class="grid cards" markdown>
     !!! example "Conception et développement"
         - Intégration d’Intercom pour la gestion des souscriptions.
@@ -166,6 +172,8 @@
 
     **Projet:** Contribution à l’app Dougs et ses microservices.
 
+    **Stack:** Node.js - NestJs - Typescript - AngularJs/12 - postgreSQL - Jest - RabbitMQ
+
     <div class="grid cards" markdown>
     !!! example "Conception et développement"
         - Création d’une nouvelle API de signup basée sur une machine à états avec étapes et vérifications d’éligibilité.
@@ -187,6 +195,8 @@
     ### Lylo Media Group
 
     **Projet:** Développement de la plateforme Youdub de gestion de la localisation audiovisuelle.
+
+    **Stack:** Node.js - Express js - Typescript - Vue js - mysql - mocha/chai
 
     <div class="grid cards" markdown>
     !!! example "Conception et développement"

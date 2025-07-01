@@ -91,6 +91,8 @@
 
     **Project:** Contribution to Dougs' application: online chartered accountants.
 
+    **Stack:** Node.js - Typescript - Angular - PostgreSQL - Jest - NestJS
+
     <div class="grid cards" markdown>
     !!! quote "Team"
         - Helped create a new team.
@@ -115,6 +117,8 @@
     ### Kili Technology
 
     **Project:** Contribution to Kili's labeling platform.
+
+    **Stack:** Node.js - Typescript - React - PostgreSQL - Jest - Mocha - GraphQL
 
     <div class="grid cards" markdown>
     !!! quote "Team"
@@ -141,6 +145,8 @@
 
     **Project:** Application development for an energy producer, trader, and supplier.
 
+    **Stack:** Node.js - Typescript - React - PostgreSQL - Jest - Mocha - Pubsub
+
     <div class="grid cards" markdown>
     !!! example "Design and development"
         - Integrated Intercom for subscription management.
@@ -166,6 +172,8 @@
 
     **Project:** Contribution to the Dougs app and its microservices.
 
+    **Stack:** Node.js - NestJS - Typescript - AngularJS/12 - PostgreSQL - Jest - RabbitMQ
+
     <div class="grid cards" markdown>
     !!! example "Design and development"
         - Created a new signup API based on a state machine with steps and eligibility checks.
@@ -188,6 +196,8 @@
 
     **Project:** Development of the Youdub platform for audiovisual localization management.
 
+    **Stack:** Node.js - Express.js - Typescript - Vue.js - MySQL - Mocha/Chai
+
     <div class="grid cards" markdown>
     !!! example "Design and development"
         - Freelance contract management module (S3 storage, Adobe Sign signature).
@@ -195,12 +205,12 @@
         - Modules for accounting (invoices, salaries, certificates, etc.) with advanced filtering.
         - Secured API routes (roles/permissions, middleware).
 
-    !!! info "Infrastructure and déploiement"
+    !!! info "Infrastructure and deployment"
         - Gitlab CI
         - Docker
 
-    !!! abstract "Organisation/méthodologie"
-        - Code review systématique avec le lead dev
-        - TDD sur nouvelles routes API
-        - Attribution des tickets via Gitlab
+    !!! abstract "Organization/methodology"
+        - Systematic code review with the lead dev
+        - TDD on new API routes
+        - Ticket assignment via Gitlab
     </div>
