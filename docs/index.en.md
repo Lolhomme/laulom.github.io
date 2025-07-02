@@ -17,7 +17,7 @@
     **École 42** (2014–2017)  
     - Developer
 
-    **Université Victor Segalen** (2005-2008)
+    **University Victor Segalen** (2005-2008)
     - Bachelor's degree in Sociology
 
     **High School Diploma** (2005)  

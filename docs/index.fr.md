@@ -20,7 +20,7 @@
     **Université Victor Segalen** (2005-2008)
     - Licence de Sociologie
 
-    **High School Diploma** (2005)  
+    **Lycée** (2005)  
     - Bac Littéraire
 
 !!! note "Langues"
