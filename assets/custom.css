@@ -1,0 +1,110 @@
+/* Make main content area full width */
+.md-content, .md-main__inner, .md-content__inner {
+  max-width: 100% !important;
+}
+
+/* Custom colors for each admonition type */
+.md-typeset .admonition.abstract {
+  border-color: #8BC34A;
+}
+.md-typeset .admonition.example {
+  border-color: #3f51b5;
+}
+.md-typeset .admonition.note {
+  border-color: #ff9800;
+}
+.md-typeset .admonition.tip {
+  border-color: #e91e63;
+}
+
+.md-header {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.md-header__inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem 0;
+    margin: 0 auto;
+}
+
+@media print {
+  .md-header, .md-sidebar, .md-footer, nav, .md-nav, .md-tabs {
+    display: none !important;
+  }
+  .md-content, .md-main__inner, .md-content__inner {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .grid.cards {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .grid.cards > *,
+  .admonition,
+  .md-typeset .admonition {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .grid.cards,
+  .grid.cards > * {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .grid.cards > * {
+    min-height: 0 !important;
+  }
+
+  @page:first {
+    margin-top: 0;
+  }
+
+  .md-typeset .admonition,
+  .md-typeset details,
+  .md-typeset .admonition-title,
+  .grid.cards > * {
+    background: #fff !important;
+    color: #222 !important;
+    border: none !important;
+    box-shadow: none !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .md-typeset .admonition,
+  .md-typeset details {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  .grid.cards > * {
+    margin-bottom: 12pt !important;
+    padding: 8pt !important;
+    background: #fff !important;
+    border: none !important;
+  }
+
+  h2 {
+    page-break-before: auto !important;
+    break-before: auto !important;
+  }
+
+  h2, h3, h4, h5, h6 {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+  h2 + .grid.cards > *,
+  h2 + .admonition {
+    page-break-before: avoid !important;
+    break-before: avoid !important;
+  }
+}
